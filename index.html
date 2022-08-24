@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <title>Metric/Imperial Unit Conversion</title>
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <h1>Metric/Imperial Unit Conversion</h1>
+        <input type="number" id="number-input">
+        </header>
+        
+        <main>
+        <div class="length">
+          <h3>Length (Meter/Feet)</h3>
+          <p><span class="input-length">0</span> meters = <span id="result-feet">0</span> feet | <span class="input-length">0</span> feet = <span id="result-meters">0</span> meters</p>
+        </div>
+        
+        <div class="volume">
+          <h3>Volume (Liters/Gallons)</h3>
+          <p><span class="input-volume">0</span> liters = <span id="result-gallons">0</span> gallons | <span class="input-volume">0</span> gallons = <span id="result-liters">0</span> liters</p>
+        </div>
+        
+        <div class="mass">
+          <h3>Mass (Kilograms/Pounds)</h3>
+          <p><span class="input-mass">0</span> kilos = <span id="result-pounds">0</span> pounds | <span class="input-mass">0</span> pounds = <span id="result-kilos">0</span> kilos</p>
+        </div>
+        
+        </main>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

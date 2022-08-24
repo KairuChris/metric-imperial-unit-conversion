@@ -1,0 +1,88 @@
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: #1F2937;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #0EA5E9;
+  padding: 20px;
+  color: white;
+  /* Chrome, Safari, Edge, Opera */
+  /* Firefox */
+}
+header h1 {
+  margin-bottom: 20px;
+}
+header #number-input, header #convert-btn {
+  align-self: center;
+}
+header #number-input {
+  padding: 10px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 800;
+  width: 150px;
+  margin-bottom: 20px;
+  border: 2px solid white;
+  background-color: #0EA5E9;
+  color: white;
+}
+header #number-input:focus {
+  outline: none;
+}
+header input::-webkit-outer-spin-button,
+header input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+header input[type=number] {
+  -moz-appearance: textfield;
+}
+header #convert-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: whitesmoke;
+  transition: 0.3s;
+}
+header #convert-btn:hover {
+  background-color: white;
+  transform: scale(1.02);
+}
+
+main {
+  padding: 20px;
+  text-align: center;
+}
+main div:not(:last-child) {
+  margin-bottom: 20px;
+}
+main div {
+  background-color: #273549;
+  padding: 10px;
+}
+main h3 {
+  color: #CCC1FF;
+  margin-bottom: 10px;
+}
+main p {
+  color: white;
+}/*# sourceMappingURL=style.css.map */

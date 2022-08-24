@@ -1,0 +1,82 @@
+@forward 'globals';
+
+body{
+    background-color: #1F2937;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #0EA5E9;
+    padding: 20px;
+    color: white;
+
+    h1{
+        margin-bottom: 20px;
+    }
+    #number-input,#convert-btn{
+        align-self: center;
+    }
+    #number-input{
+        padding: 10px;
+        text-align: center;
+        font-size: 25px;
+        font-weight: 800;
+        width: 150px;
+        margin-bottom: 20px;
+        border: 2px solid white;
+        background-color: #0EA5E9;
+        color: white;
+
+        &:focus{
+        outline: none;
+        }
+    }
+        // for removing spinners 
+     /* Chrome, Safari, Edge, Opera */
+     input::-webkit-outer-spin-button,
+     input::-webkit-inner-spin-button {
+     -webkit-appearance: none;
+     margin: 0;
+     }
+ 
+     /* Firefox */
+     input[type=number] {
+     -moz-appearance: textfield;
+     }
+   
+    #convert-btn{
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        background-color: whitesmoke;
+        transition: .3s;
+
+        &:hover{
+            background-color: white;
+            transform: scale(1.02);
+        }
+    }
+
+}
+
+main{
+    padding: 20px;
+    text-align: center;
+
+    & div:not(:last-child){
+        margin-bottom: 20px;
+    }
+    div{
+        background-color: #273549;
+        padding: 10px;
+    }
+    h3{
+        color: #CCC1FF;
+        margin-bottom: 10px;
+    }
+    p{
+        color: white;
+    }
+}
